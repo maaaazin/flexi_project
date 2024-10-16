@@ -10,7 +10,8 @@ nav {
     display: flex;
     color: white;
     justify-content: space-between;
-    padding: 0.5rem 2rem 0 2rem;
+    padding: 0.5rem 4rem 0 4rem;
+    
 }
 
 nav ul {
@@ -19,16 +20,28 @@ nav ul {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 5rem;
+    gap: 4rem;
     font-size: 20px;
     font-weight: 600;
 }
 
-nav li {
+nav ul li a {
     text-decoration: none;
     color: white;
+    position: relative;
 }
 
-nav li:hover {
-    
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fafafa;
+    transition: all 0.5s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
 }

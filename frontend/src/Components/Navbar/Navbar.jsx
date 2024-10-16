@@ -1,11 +1,9 @@
 import React from 'react'
 import logo from '../../assets/logo.png'
 
-
 const Navbar = () => {
   return (
     <nav>  
-        
         <a href="/"> <img src= {logo}  alt="KRYPTONITE" className='logo'/> </a>
         <ul>
             <li className='links'> <a href="/drops"> Drops </a> </li>
