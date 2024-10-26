@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import './App.css'
 import Navbar from './Components/Navbar/Navbar'
+import Footer from './Components/Footer/Footer'
 import About from './pages/About'
 import Create from './pages/Create'
 import Drops from './pages/Drops'
@@ -26,6 +27,7 @@ function App() {
             <Route path="/create" element={<Create />} />
         </Routes>
       </div>
+      <Footer />
     </>
   )
 }
